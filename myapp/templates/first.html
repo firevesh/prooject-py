@@ -1,10 +1,39 @@
-<html><head><title>forms</title></head>
+{% load static %}
+
+<html>
+    <head>
+         <title>forms</title>
+        <link rel="stylesheet" href="'{% static 'css/sample.css' %}">
+         <style>
+
+        h2{
+            border:10px;
+            text-align: center;
+            text-decoration-color: black;
+            background-size: 11px;
+        }
+        body{
+            background-color: grey;
+            text-align-last: center;
+            
+        }
+        </style>
+
+
+
+    </head>
     <body>
         <form >
-            <center>LOGIN</center><br>
-            USERID<input type="text">
-            PASKEY<input type="'password"><br>
+           <h1 style="color:magenta"> 
+            <center>LOGIN</center><br></h1>
+           <h2>
+                USERID:<input type="text">
+                </h2>
+            <h3>
+                PASKEY:<input type="'password"><br><br><br><br>
             <input type="button" value="'SIGN UP">
+            </h3>
+            
 
 
 
