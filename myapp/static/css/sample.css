@@ -1,0 +1,12 @@
+#loginid{
+    border: 10px ;
+    color:brown ;
+    text-align:right ;
+
+}
+.cls{
+    box-sizing: border-box;
+    text-underline-position: below;
+    text-align: left;
+    border: 5px solid chocolate;
+}
