@@ -6,7 +6,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        <title>forms</title>
+<script type="text/javascript">
+    document.write("HELLLOOOOO")
+    function fun(){
+        var fname = "surya"
+    }
+    function display(){
+        console.log(fname);
+    }
+</script> 
+<script src="{% static 'js/home.js' %}"></script>      
+<title>forms</title>
         <link rel="stylesheet" href="'{% static 'css/sample.css' %}">
          <style>
 
@@ -15,15 +25,22 @@
             text-align: center;
             text-decoration-color: black;
             background-size: 11px;
+            
         }
         body{
-            background-color: grey;
+            
             text-align-last: center;
+            padding-top: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
             
         }
         #style{
             align-items: center;
             border: 9px;
+            background-color: lightskyblue;
+            width: 80px;
+            height: 80px;
         }
         /* .cls{
             text-align: right;
@@ -35,56 +52,48 @@
 
     </head>
     <body>
-        <div class="container">
-            <div class="row" style="background-color:cornsilk;"><form >
-                <br>
-               <h1 style="color:black" id="loginid"> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+            <div class="style">
+               <h1 style="color:burlywood" id="loginid"> 
             
                
-                    <input type="text" placeholder="Email">
+                   <H5>MAIL: <input type="text" placeholder="mailid goes here">
                     
                     <br><br>
-                    <input type="'password" placeholder="paaskey"><br><br><br><br>
-                    <input type="button" value="reset" >
-                    <div class="" <button type="button" class="btn btn-primary btn-lg">Login</button><BR><BR><BR>
-                     <button type="button" class="btn btn-secondary btn-lg">sign-up</button><BR><BR><BR>
-                     <h5 id="style">
-                     <div class="col-lg-6">
+                   passkey <input type="'password" ><br><br></H5>
                     
-                        <button class="btn btn-primary" type="button">CLICKHERE if new</button>
-                         <button class="btn btn-primary" type="button">forgot password</button>
-                     </div>
-                     <div class="col-lg-3" style = "background-color:cornsilk">
-                        <h5> CLICKHERE if you are new </h5>
-                        </div>
-            
-                <div class="cls"><I><h3>forgot password</h3></I></div>
-                
-               
-            
-            
-            
-            
-            
+                    
+                    
+                    
+                     <center>   <button class="btn btn-primary" type="button">login</button>
+                         <button class="btn btn-primary" type="button">sign-up</button><br><br><br>
+                    <a class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true" onclick="alert('Welcome yo !')">SUBMIT</a>
                     </center>
-            </form><BR><BR></div>
+            </form><BR>
 
 
         
-        <div class="container">
-                <P>  1 4 3 and 6 to 9 represnting avq whaddaup bi***</P>
-        </div>
-        <div class="row">
-                 <b> if you </b><BR><BR>
+       
+        
+                 <i> real madrid shirt is white  </i>
                 <div class="col-lg-6 col-sm-10 col-md-8">
-                    <h5>know you   know</h5>
+                    <h5>it may stain of mud,sweat and  even blood</h5>
                 </div>
                 <div class="col-lg-6 col-sm-2 col-md-4">
-                    ok google !
+                   <h5>but never of ashame</h5>
                 </div>
                 
-        </div>
+        
+        <button onclick="fun()"> submit</button>
+        <button onclick="display()">display</button>
+    </div>
+    <div class="col-lg-3"></div>
+    </div>
 
+    </div>
 
 
     </body>
