@@ -5,35 +5,45 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    document.write("HELLLOOOOO")
-    function fun(){
-        var fname = "surya"
-    }
-    function display(){
-        console.log(fname);
-    }
-</script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+         document.write("HELLLOOOOO")
+         function pro()
+         {
+             id=prompt("enter number") 
+            if(id % 2==0)
+                      alert("number is div by 2") 
+            else
+                      alert("not div by 2")
+         }
+  
+          function display()
+          {
+              
+               for(i=1;i<=5;i++){
+                    for(j=1;j<=i;j++){
+                        document.write("*")  
+                    }
+                    document.write('<br>')
+                } 
+          }
+        </script> 
 <script src="{% static 'js/home.js' %}"></script>      
 <title>forms</title>
         <link rel="stylesheet" href="'{% static 'css/sample.css' %}">
          <style>
-
         h2{
             border:10px;
             text-align: center;
             text-decoration-color: black;
-            background-size: 11px;
-            
+            background-size: 11px;           
         }
         body{
             
             text-align-last: center;
             padding-top: 100px;
             padding-left: 50px;
-            padding-right: 50px;
-            
+            padding-right: 50px;            
         }
         #style{
             align-items: center;
@@ -48,54 +58,36 @@
         }    */
         </style>
 
-
-
-    </head>
-    <body>
-            <div class="container-fluid">
-                <div class="row">
+</head>
+ <body>
+               <div class="container-fluid">
+                    <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6">
-            <div class="style">
+              <div class="style">
                <h1 style="color:burlywood" id="loginid"> 
-            
-               
-                   <H5>MAIL: <input type="text" placeholder="mailid goes here">
-                    
+             <H5>MAIL: <input type="text" >        
                     <br><br>
-                   passkey <input type="'password" ><br><br></H5>
-                    
-                    
-                    
-                    
-                     <center>   <button class="btn btn-primary" type="button">login</button>
-                         <button class="btn btn-primary" type="button">sign-up</button><br><br><br>
-                    <a class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true" onclick="alert('Welcome yo !')">SUBMIT</a>
-                    </center>
-            </form><BR>
-
-
-        
-       
-        
-                 <i> real madrid shirt is white  </i>
+             passkey <input type="'password" ><br><br></H5>                 
+             <center>   
+                         <button class="btn btn-primary" type="button" onClick="display()">login</button>
+                         <button class="btn btn-primary" type="button" onClick= "pro()">sign-up</button><br><br><br>
+                    <a class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true" onclick="alert('Welcome yo !')" >SUBMIT</a>
+             </center>
+            </form><BR>  
                 <div class="col-lg-6 col-sm-10 col-md-8">
-                    <h5>it may stain of mud,sweat and  even blood</h5>
+                    <i> real madrid shirt is white  </i> <h5>it may stain of mud,sweat and  even blood</h5>
                 </div>
                 <div class="col-lg-6 col-sm-2 col-md-4">
                    <h5>but never of ashame</h5>
                 </div>
-                
-        
-        <button onclick="fun()"> submit</button>
-        <button onclick="display()">display</button>
+
     </div>
     <div class="col-lg-3"></div>
     </div>
 
     </div>
 
-
-    </body>
+ </body>
 </html>
 
